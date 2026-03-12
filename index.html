@@ -9,62 +9,100 @@
 
 body{
 font-family: Georgia, serif;
-margin:40px;
 background:white;
+margin:0;
+padding:0;
 color:black;
 line-height:1.6;
 }
 
+/* Page container /
+
+.page{
+max-width:1100px;
+margin:auto;
+padding:40px;
+}
+
+/ Title /
+
 header{
 text-align:center;
+border-bottom:3px solid black;
+padding-bottom:20px;
 margin-bottom:40px;
 }
 
-h1{
-font-size:48px;
+header h1{
+font-size:52px;
 margin-bottom:10px;
 }
 
-.subtitle{
+header p{
 font-size:18px;
 }
 
-.columns{
+/ Main magazine grid /
+
+.magazine{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:2fr 1fr;
 gap:40px;
-margin-top:20px;
 }
+
+/ Sections /
 
 .section{
-margin-top:40px;
+margin-bottom:40px;
 }
 
-h2{
+.section h2{
 border-bottom:2px solid black;
 padding-bottom:5px;
 margin-bottom:15px;
 }
+
+.section h3{
+margin-top:20px;
+}
+
+/ Quotes /
+
+.quote{
+font-style:italic;
+margin:10px 0;
+}
+
+/ Sidebar /
+
+.sidebar{
+border:2px solid black;
+padding:20px;
+background:#f7f7f7;
+}
+
+/ Images /
 
 img{
 width:100%;
 margin-bottom:15px;
 }
 
-.quote{
-font-style:italic;
-}
+/ Bottom columns */
 
-.church-box{
-border:2px solid black;
-padding:20px;
+.three-columns{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:30px;
 margin-top:20px;
 }
 
 footer{
 text-align:center;
-margin-top:60px;
+margin-top:50px;
 font-size:14px;
+border-top:2px solid black;
+padding-top:20px;
 }
 
 </style>
@@ -73,13 +111,14 @@ font-size:14px;
 
 <body>
 
+<div class="page">
+
 <header>
 
 <h1>Martin Luther and His Reform</h1>
 
-<p class="subtitle">
-Born November 10, 1483 – Eisleben, Saxony  
-<br>
+<p>
+Born November 10, 1483 – Eisleben, Saxony<br>
 Died February 18, 1546 – Eisleben, Saxony
 </p>
 
@@ -88,24 +127,25 @@ Married to Katharina von Bora from June 13, 1525 until his death.
 </p>
 
 <p>
-His influence on the Protestant Reformation can be shown through three important events:
-The posting of the Theses, the Diet of Worms, and the translation of the Bible into German.
+His influence on the Protestant Reformation can be shown through three key events:
+The posting of the 95 Theses, the Diet of Worms, and the translation of the Bible into German.
 </p>
 
 <p>
-02/26/2026  
-<br>
-Chase Chriswisser • Tristan Dutil • Joel Fernandez
+02/26/2026 • Chase Chriswisser • Tristan Dutil • Joel Fernandez
 </p>
 
 </header>
 
 
-<div class="columns">
+
+<div class="magazine">
 
 <div>
 
-<h2>Key Events</h2>
+<div class="section">
+
+<h2>Key Events of the Reformation</h2>
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Lutherpostingtheses.jpg">
 
@@ -113,62 +153,55 @@ Chase Chriswisser • Tristan Dutil • Joel Fernandez
 
 <p>
 On October 31, Luther posted his 95 Theses on the door of a church in Wittenberg.
-These theses challenged the sale of indulgences and papal authority.
-This event is widely seen as the start of the Protestant Reformation.
+These theses challenged the sale of indulgences and the authority of the Pope.
+This moment is considered the beginning of the Protestant Reformation.
 </p>
-
 
 <h3>The Diet of Worms (1521)</h3>
 
 <p>
-At this meeting Luther was ordered to revoke his teachings before Emperor Charles V.
-He refused, and the Church excommunicated him, deepening the divide between Catholic and Protestant groups.
+At the Diet of Worms, Luther was ordered to recant his teachings before Emperor Charles V.
+He refused, which resulted in his excommunication and strengthened the divide between Protestant reformers and the Catholic Church.
 </p>
-
 
 <h3>The German Bible Translation (1522–1534)</h3>
 
 <p>
-While in hiding, Luther translated the New Testament into German.
-This allowed ordinary people to read the Bible and supported his belief that Scripture should be the highest authority.
+While hiding for protection, Luther translated the New Testament into German.
+This allowed common people to read the Bible themselves and supported his belief that Scripture is the highest authority in Christianity.
 </p>
 
 </div>
 
 
 
-<div>
+<div class="section">
 
-<h2>Disagreements with the Catholic Church</h2>
+<h2>Major Disagreements</h2>
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Martin_Luther.jpg">
-
 
 <h3>Sale of Indulgences</h3>
 
 <p>
-Martin Luther strongly opposed the Church selling indulgences, which were believed to reduce time in purgatory.
-He believed forgiveness could not be bought and that salvation comes through God’s grace and faith.
+Luther strongly opposed the Church selling indulgences as a way to reduce punishment in purgatory.
+He believed forgiveness could not be purchased and that salvation comes through faith and God’s grace.
 </p>
 
 <p class="quote">
 “The Pope has no power to remit sins except by declaring and showing that they are remitted by God’s grace.” (Luther, 1517)
 </p>
 
-
-
 <h3>Authority of Scripture vs Church Tradition</h3>
 
 <p>
-Luther believed the Bible alone should guide Christian belief and practice.
-He argued that many Church teachings were not supported by Scripture.
+Luther believed the Bible alone should guide Christian beliefs and practices.
+He argued that Church traditions should not override Scripture.
 </p>
 
 <p class="quote">
 “It is neither right nor safe to depart from Scripture in matters of faith.” (Luther, 1520)
 </p>
-
-
 
 <h3>The Sacrament of Communion</h3>
 
@@ -183,11 +216,9 @@ Instead, he believed Christ is truly present during communion but that the bread
 
 
 
-<div class="section">
+<div class="sidebar">
 
 <h2>Lutheranism in Our Community</h2>
-
-<div class="church-box">
 
 <p><strong>Saint Paul Lutheran Church Miami</strong></p>
 
@@ -198,7 +229,7 @@ splcm.churchcenter.com/home
 </p>
 
 <p>
-Led by Pastor Sielk, the church offers services every Sunday:
+Led by Pastor Sielk, the church offers weekly services:
 </p>
 
 <ul>
@@ -207,11 +238,11 @@ Led by Pastor Sielk, the church offers services every Sunday:
 </ul>
 
 <p>
-They also provide youth ministry activities and Bible study groups.
+The church also provides youth ministry activities and Bible study groups.
 </p>
 
 <p>
-10700 SW 56 St  
+10700 SW 56 St<br>
 Miami, FL 33165
 </p>
 
@@ -225,14 +256,14 @@ Miami, FL 33165
 
 <h2>Similarities Between Luther and Modern Lutheran Churches</h2>
 
-<div class="columns">
+<div class="three-columns">
 
 <div>
 
 <h3>Salvation Through Faith Alone</h3>
 
 <p>
-Martin Luther taught that salvation comes through faith alone (sola fide).
+Luther taught that salvation comes through faith alone, known as “sola fide.”
 </p>
 
 <p class="quote">
@@ -240,7 +271,7 @@ Martin Luther taught that salvation comes through faith alone (sola fide).
 </p>
 
 <p>
-Lutheran churches today continue to emphasize faith and God’s grace for salvation.
+Modern Lutheran churches continue emphasizing God’s grace and faith in Jesus Christ for salvation.
 </p>
 
 </div>
@@ -251,7 +282,7 @@ Lutheran churches today continue to emphasize faith and God’s grace for salvat
 <h3>The Bible as the Highest Authority</h3>
 
 <p>
-Luther believed Scripture was the ultimate authority (sola scriptura).
+Luther believed Scripture was the ultimate authority, called “sola scriptura.”
 </p>
 
 <p class="quote">
@@ -259,7 +290,7 @@ Luther believed Scripture was the ultimate authority (sola scriptura).
 </p>
 
 <p>
-Modern Lutheran worship continues to focus heavily on Bible readings and sermons.
+Lutheran worship services today include Bible readings and sermons based on Scripture.
 </p>
 
 </div>
@@ -270,7 +301,7 @@ Modern Lutheran worship continues to focus heavily on Bible readings and sermons
 <h3>The Priesthood of All Believers</h3>
 
 <p>
-Luther believed all Christians can have a direct relationship with God.
+Luther believed all Christians could have a direct relationship with God.
 </p>
 
 <p class="quote">
@@ -278,7 +309,7 @@ Luther believed all Christians can have a direct relationship with God.
 </p>
 
 <p>
-Church members today actively participate in worship, Bible study, and community activities.
+Members of Lutheran churches today actively participate in worship, Bible study, and church activities.
 </p>
 
 </div>
@@ -290,8 +321,14 @@ Church members today actively participate in worship, Bible study, and community
 
 
 <footer>
-Chase Chriswisser • Tristan Dutil • Joel Fernandez • 2026
+
+Chase Chriswisser • Tristan Dutil • Joel Fernandez  
+<br>
+Protestant Reformation Webpage Project • 2026
+
 </footer>
+
+</div>
 
 </body>
 </html>
